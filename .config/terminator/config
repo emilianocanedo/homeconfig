@@ -1,0 +1,16 @@
+[global_config]
+focus = system
+ 
+[keybindings]
+full_screen = <Ctrl><Shift>F11
+ 
+[profiles]
+[[default]]
+use_system_font = False
+background_color = "#000000"
+foreground_color = "#FFFFFF"
+background_darkness = '0.8'
+background_type = "transparent"
+scrollback_lines = '1000'
+cursor_blink = True
+font = Ubuntu Mono 13
