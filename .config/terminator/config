@@ -1,16 +1,90 @@
 [global_config]
-focus = system
- 
+  borderless = True
+  focus = system
+  title_hide_sizetext = True
+  title_inactive_bg_color = "#000000"
+  title_inactive_fg_color = "#ffffff"
+  title_receive_bg_color = "#000000"
+  title_receive_fg_color = "#0096ff"
+  title_transmit_bg_color = "#000000"
+  title_transmit_fg_color = "#00ff64"
 [keybindings]
-full_screen = <Ctrl><Shift>F11
- 
+  full_screen = <Ctrl><Shift>F11
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      profile = default
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      type = Window
+  [[Emi]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = 00144b18-5cbb-49b8-bfe5-c238306b4fe7
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:24
+      size = 1920, 1056
+      title = emi_title
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 957
+      ratio = 0.5
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 525
+      ratio = 0.5
+      type = VPaned
+    [[[child5]]]
+      order = 1
+      parent = child3
+      position = 259
+      ratio = 0.499047619048
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = 00144b18-5cbb-49b8-bfe5-c238306b4fe7
+    [[[terminal4]]]
+      command = ""
+      directory = ~/
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 8a6e8e39-044e-4286-bd40-94fb21237455
+    [[[terminal6]]]
+      command = ""
+      directory = ~/
+      order = 0
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 110696da-4799-4224-acb8-9185c9570ea5
+    [[[terminal7]]]
+      directory = ~/
+      order = 1
+      parent = child5
+      profile = default
+      type = Terminal
+      uuid = 6d529739-352e-4207-8c38-c3ad01d5af72
+[plugins]
 [profiles]
-[[default]]
-use_system_font = False
-background_color = "#000000"
-foreground_color = "#FFFFFF"
-background_darkness = '0.8'
-background_type = "transparent"
-scrollback_lines = '1000'
-cursor_blink = True
-font = Ubuntu Mono 13
+  [[default]]
+    background_darkness = 0.8
+    background_image = None
+    background_type = transparent
+    font = Ubuntu Mono 13
+    foreground_color = "#ffffff"
+    scrollback_lines = 1000
+    use_system_font = False
